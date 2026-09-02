@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: { brand: "#DB4444" },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .second-div {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="mx-auto max-w-7xl px-4 py-8">
+        <div class="grid lg:grid-cols-[240px_1fr] gap-8">
+          <aside class="hidden lg:block border-r border-neutral-200 pr-8">
+            <div class="space-y-5 text-sm">
+              <a href="#" class="flex items-center justify-between group"
+                >Woman's Fashion <span>›</span></a
+              >
+              <a href="#" class="flex items-center justify-between group"
+                >Men's Fashion <span>›</span></a
+              >
+              <a href="#" class="block">Electronics</a>
+              <a href="#" class="block">Home & Lifestyle</a>
+              <a href="#" class="block">Medicine</a>
+              <a href="#" class="block">Sports & Outdoor</a>
+              <a href="#" class="block">Baby's & Toys</a>
+              <a href="#" class="block">Groceries & Pets</a>
+              <a href="#" class="block">Health & Beauty</a>
+            </div>
+          </aside>
+
+          <div
+            class="relative overflow-hidden bg-black h-[400px] flex items-center"
+          >
+            <div class="relative z-10 px-8 sm:px-14 py-12 text-white max-w-xl">
+              <p class="flex items-center gap-3 text-sm sm:text-base mb-6">
+                <span class="text-2xl"
+                  ><img src="./assets/apple.png" alt=""
+                /></span>
+                iPhone 14 Series
+              </p>
+              <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight"
+              >
+                Up to 10% off Voucher
+              </h1>
+              <a
+                href="#"
+                class="inline-flex mt-8 items-center gap-3 border-b border-white pb-1 font-medium"
+                >Shop Now <span>→</span></a
+              >
+            </div>
+            <img
+              class="absolute right-0 bottom-0 h-full w-[58%] object-cover object-left"
+              src="./assets/hero_img.png"
+              alt="hero image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Flash Sales -->
+      <section class="max-full px-4 py-10">
+        <div class="flex items-end gap-10 mb-8">
+          <div>
+            <div class="flex items-center gap-3 text-brand font-semibold mb-3">
+              <span class="w-5 h-10 bg-brand rounded-sm"></span>
+              Today's
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-semibold">Flash Sales</h2>
+          </div>
+          <div class="hidden sm:flex items-center gap-5 text-center">
+            <div>
+              <div class="text-xs font-medium">Days</div>
+              <div class="text-3xl font-bold">03</div>
+            </div>
+            <span class="text-brand text-2xl">:</span>
+            <div>
+              <div class="text-xs font-medium">Hours</div>
+              <div class="text-3xl font-bold">23</div>
+            </div>
+            <span class="text-brand text-2xl">:</span>
+            <div>
+              <div class="text-xs font-medium">Minutes</div>
+              <div class="text-3xl font-bold">19</div>
+            </div>
+            <span class="text-brand text-2xl">:</span>
+            <div>
+              <div class="text-xs font-medium">Seconds</div>
+              <div class="text-3xl font-bold">56</div>
+            </div>
+          </div>
+          <div class="ml-auto hidden sm:flex gap-2">
+            <button
+              class="w-10 h-10 rounded-full bg-neutral-100 hover:bg-neutral-200"
+            >
+              ←
+            </button>
+            <button
+              class="w-10 h-10 rounded-full bg-neutral-100 hover:bg-neutral-200"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <!-- Product cards -->
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <span
+                class="absolute left-3 z-[1] top-3 bg-brand text-white text-xs px-3 py-1.5 rounded"
+                >-40%</span
+              >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 rounded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/HAVIT.png"
+                class="h-30 w-[100px] group-hover:scale-105 transition"
+                alt="Makeup"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">HAVIT HV-G92 Gamepad</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$120</span>
+              <del class="text-neutral-500 ml-2">$160</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(88)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <span
+                class="absolute left-3 top-3 bg-brand z-[1] text-white text-xs px-3 py-1.5 rounded"
+                >-35%</span
+              >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 rounded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/keybord.png"
+                class="h-48 w-[250px] object-cover group-hover:scale-105 transition"
+                alt="Headphones"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">AKG Noise Cancelling Headphones</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$960</span>
+              <del class="text-neutral-500 ml-2">$1,160</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(75)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <span
+                class="absolute left-3 top-3 bg-brand z-[1] text-white text-xs px-3 py-1.5 rounded"
+                >-30%</span
+              >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 rounded-full ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/lcd.png"
+                class="h-38 w-[200px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <span
+                class="absolute left-3 top-3 bg-brand z-[1] text-white text-xs px-3 py-1.5 rounded"
+                >-25%</span
+              >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 rounded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/chair.png"
+                class="h-[170px] w-[100px] group-hover:scale-105 transition"
+                alt="Smart watch"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">IPS LCD Gaming Smart Watch</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$375</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+        </div>
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block bg-[#DB4444] text-white px-10 py-4 rounded-md font-medium"
+            >View All Products</a
+          >
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="mx-auto max-w-7xl px-4 py-14 border-t border-neutral-200">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <div class="flex items-center gap-3 text-brand font-semibold mb-3">
+              <span class="w-5 h-10 bg-brand rounded-sm"></span>Categories
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-semibold">
+              Browse By Category
+            </h2>
+          </div>
+          <div class="hidden sm:flex gap-2">
+            <button class="w-10 h-10 rounded-full bg-neutral-100">←</button
+            ><button class="w-10 h-10 rounded-full bg-neutral-100">→</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <a
+            class="border border-neutral-300 rounded-md h-36 flex flex-col items-center justify-center gap-4 hover:bg-[#DB4444] hover:text-white transition"
+            ><span class="text-4xl"
+              ><i class="fa-solid fa-mobile-screen"></i></span
+            ><span>Phones</span></a
+          >
+          <a
+            class="border border-neutral-300 rounded-md h-36 flex flex-col items-center justify-center gap-4 hover:bg-[#DB4444] hover:text-white transition"
+            ><span class="text-4xl"><i class="fa-solid fa-display"></i></span
+            ><span>Computers</span></a
+          >
+          <a
+            class="border border-neutral-300 rounded-md h-36 flex flex-col items-center justify-center gap-4 hover:bg-[#DB4444] hover:text-white transition"
+            ><span class="text-4xl"><i class="fa-regular fa-clock"></i></span
+            ><span>SmartWatch</span></a
+          >
+          <a
+            class="border border-neutral-300 rounded-md h-36 flex flex-col items-center justify-center gap-4 hover:bg-[#DB4444] hover:text-white transition"
+            ><span class="text-4xl"><i class="fa-regular fa-camera"></i></span
+            ><span>Camera</span></a
+          >
+          <a
+            class="border border-neutral-300 rounded-md h-36 flex flex-col items-center justify-center gap-4 hover:bg-[#DB4444] hover:text-white transition"
+            ><span class="text-4xl"
+              ><i class="fa-regular fa-headphones"></i></span
+            ><span>HeadPhones</span></a
+          >
+          <a
+            class="border border-neutral-300 rounded-md h-36 flex flex-col items-center justify-center gap-4 hover:bg-[#DB4444] hover:text-white transition"
+            ><span class="text-4xl"><i class="fa-solid fa-gamepad"></i></span
+            ><span>Gaming</span></a
+          >
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-14 border-t border-neutral-200">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <div class="flex items-center gap-3 text-brand font-semibold mb-3">
+              <span class="w-5 h-10 bg-brand rounded-sm"></span>This Month
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-semibold">
+              Best Selling Products
+            </h2>
+          </div>
+          <a
+            href="#"
+            class="bg-brand text-white px-8 py-3 rounded-md font-medium"
+            >View All</a
+          >
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 rounded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/bag.png"
+                class="h-30 w-[100px] group-hover:scale-105 transition"
+                alt="Makeup"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">HAVIT HV-G92 Gamepad</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$120</span>
+              <del class="text-neutral-500 ml-2">$160</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(88)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 roun ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/jaket.png"
+                class="h-38 w-[200px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 roun ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/spekrs.png"
+                class="h-38 w-[200px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 roun ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/wood.png"
+                class="h-[150px] w-[100px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-14">
+        <div
+          class="bg-black text-white rounded-lg min-h-[420px] relative flex flex-col md:flex-row items-center overflow-hidden"
+        >
+          <div
+            class="px-8 sm:px-14 py-14 relative z-10 w-full md:w-[50%] max-w-xl"
+          >
+            <p class="text-green-400 font-semibold mb-6">Categories</p>
+
+            <h2 class="text-4xl sm:text-5xl font-semibold leading-tight">
+              Enhance Your Music Experience
+            </h2>
+
+            <div class="flex gap-3 sm:gap-4 my-8 flex-wrap">
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 bg-white text-black rounded-full flex flex-col items-center justify-center shrink-0"
+              >
+                <b>05</b>
+                <small>Days</small>
+              </div>
+
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 bg-white text-black rounded-full flex flex-col items-center justify-center shrink-0"
+              >
+                <b>23</b>
+                <small>Hours</small>
+              </div>
+
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 bg-white text-black rounded-full flex flex-col items-center justify-center shrink-0"
+              >
+                <b>59</b>
+                <small>Min</small>
+              </div>
+
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 bg-white text-black rounded-full flex flex-col items-center justify-center shrink-0"
+              >
+                <b>35</b>
+                <small>Sec</small>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="inline-block bg-[#00FF66] hover:bg-green-400 text-black font-semibold px-8 py-3 rounded-md"
+            >
+              Buy Now!
+            </a>
+          </div>
+
+          <div
+            class="w-full md:w-[50%] h-[260px] sm:h-[300px] md:h-[300px] flex items-center justify-center relative"
+          >
+            <img
+              src="./assets/gardiant_img.png"
+              class="w-[80%] sm:w-[70%] h-auto md:h-[300px] object-contain"
+              alt="Headphones promotion"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- explore product -->
+      <section class="mx-auto max-w-7xl px-4 py-14 border-t border-neutral-200">
+        <div class="mb-8">
+          <div class="flex items-center gap-3 text-brand font-semibold mb-3">
+            <span class="w-5 h-10 bg-brand rounded-sm"></span>Our Products
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-semibold">
+            Explore Our Products
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 rounded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/bag.png"
+                class="h-30 w-[100px] group-hover:scale-105 transition"
+                alt="Makeup"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">HAVIT HV-G92 Gamepad</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$120</span>
+              <del class="text-neutral-500 ml-2">$160</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(88)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 roun ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/jaket.png"
+                class="h-38 w-[200px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 roun ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/spekrs.png"
+                class="h-38 w-[200px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+
+          <article class="group">
+            <div
+              class="relative bg-neutral-100 rounded-md h-60 flex items-center justify-center overflow-hidden"
+            >
+              <button
+                class="absolute right-3 top-3 w-9 h-9 roun ded-full bg-white"
+              >
+                ♡
+              </button>
+              <img
+                src="./assets/wood.png"
+                class="h-[150px] w-[100px] group-hover:scale-105 transition"
+                alt="Running shoes"
+              />
+              <button
+                class="absolute bottom-0 inset-x-0 bg-black text-white py-3 translate-y-full group-hover:translate-y-0 transition"
+              >
+                Add To Cart
+              </button>
+            </div>
+            <h3 class="font-medium mt-4">Jr. Zoom Soccer Cleats</h3>
+            <p class="mt-2">
+              <span class="text-brand font-medium">$370</span>
+              <del class="text-neutral-500 ml-2">$400</del>
+            </p>
+            <p class="text-sm mt-2 text-[#FFAD33]">
+              ★★★★★ <span class="text-neutral-500">(99)</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- New Arrival -->
+      <section class="w-full">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-14"
+        >
+          <div class="mb-8">
+            <div class="flex items-center gap-3 mb-3">
+              <span
+                class="w-[10px] h-[22px] sm:w-[12px] sm:h-[24px] bg-[#DB4444] rounded-[2px]"
+              ></span>
+
+              <p class="text-[#DB4444] text-[11px] sm:text-[12px] font-medium">
+                Featured
+              </p>
+            </div>
+
+            <h2 class="text-[28px] sm:text-[32px] lg:text-[36px] font-semibold">
+              New Arrival
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div
+              class="relative w-full h-[350px] sm:h-[420px] lg:h-[500px] bg-black rounded-[4px] overflow-hidden"
+            >
+              <img
+                src="./assets/ps5.png"
+                alt="PlayStation 5"
+                class="w-[400px] h-[400px] absolute bottom-0 right-0"
+              />
+
+              <div
+                class="absolute left-5 sm:left-6 bottom-5 sm:bottom-6 text-white max-w-[280px]"
+              >
+                <h3 class="text-[20px] sm:text-[22px] font-medium mb-2">
+                  PlayStation 5
+                </h3>
+
+                <p
+                  class="text-[11px] sm:text-[12px] leading-5 text-gray-200 mb-2"
+                >
+                  Black and White version of the PS5 coming out on sale.
+                </p>
+
+                <a
+                  href="#"
+                  class="inline-block text-[11px] sm:text-[12px] text-white border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition"
+                >
+                  Shop Now
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4">
+              <div
+                class="relative w-full h-[260px] sm:h-[300px] lg:h-[242px] bg-[#111] rounded-[4px] overflow-hidden"
+              >
+                <img
+                  src="./assets/women-hat.png"
+                  alt="Women's Collection"
+                  class="absolute inset-0 w-full h-full object-cover object-center"
+                />
+
+                <!-- Content -->
+                <div
+                  class="absolute left-5 sm:left-6 bottom-5 sm:bottom-6 text-white max-w-[230px]"
+                >
+                  <h3 class="text-[18px] sm:text-[20px] font-medium mb-2">
+                    Women's Collections
+                  </h3>
+
+                  <p
+                    class="text-[10px] sm:text-[11px] leading-4 text-gray-200 mb-2"
+                  >
+                    Featured woman collections that give you another vibe.
+                  </p>
+
+                  <a
+                    href="#"
+                    class="inline-block text-[10px] sm:text-[11px] border-b border-white pb-1 hover:text-gray-300 transition"
+                  >
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div
+                  class="relative w-full h-[230px] sm:h-[250px] lg:h-[242px] bg-[#222] rounded-[4px] overflow-hidden"
+                >
+                  <img
+                    src="./assets/./speaker_707.png"
+                    alt="Speakers"
+                    class="absolute inset-0 w-[70%] h-full pl-[30px]"
+                  />
+
+                  <!-- Content -->
+                  <div
+                    class="absolute left-4 sm:left-5 bottom-4 sm:bottom-5 text-white"
+                  >
+                    <h3 class="text-[17px] sm:text-[18px] font-medium mb-1">
+                      Speakers
+                    </h3>
+
+                    <p class="text-[9px] sm:text-[10px] text-gray-200 mb-1">
+                      Amazon wireless speakers
+                    </p>
+
+                    <a
+                      href="#"
+                      class="text-[9px] sm:text-[10px] border-b border-white pb-1"
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    background-image: url(./assets/guci.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                  class="relative w-full h-[230px] sm:h-[250px] lg:h-[242px] bg-[#222] rounded-[4px] overflow-hidden"
+                >
+                  <!-- <img
+                    src="./assets/guci.png"
+                    alt="Perfume"
+                    class="absolute inset-0 w-[60%] h-[200px] "
+                  /> -->
+
+                  <div
+                    class="absolute left-4 sm:left-5 bottom-4 sm:bottom-5 text-white"
+                  >
+                    <h3 class="text-[17px] sm:text-[18px] font-medium mb-1">
+                      Perfume
+                    </h3>
+
+                    <p class="text-[9px] sm:text-[10px] text-gray-200 mb-1">
+                      GUCCI INTENSE OUD EDP
+                    </p>
+
+                    <a
+                      href="#"
+                      class="text-[9px] sm:text-[10px] border-b border-white pb-1"
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16">
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+          <div>
+            <div
+              class="mx-auto w-20 h-20 rounded-full bg-neutral-300 flex items-center justify-center text-3xl"
+            >
+              <div
+                class="border-2 border-[black] rounded-full h-14 w-14 bg-black flex items-center justify-center"
+              >
+                <img src="./assets/icon-delivery.png" alt="" />
+              </div>
+            </div>
+            <h3 class="font-semibold mt-5">FREE AND FAST DELIVERY</h3>
+            <p class="text-sm mt-2 text-neutral-600">
+              Free delivery for all orders over $140
+            </p>
+          </div>
+          <div>
+            <div
+              class="mx-auto w-20 h-20 rounded-full bg-neutral-300 flex items-center justify-center text-3xl"
+            >
+              <div
+                class="border-2 border-[black] rounded-full h-14 w-14 bg-black flex items-center justify-center"
+              >
+                <img src="./assets/Icon-Customer service.png" alt="" />
+              </div>
+            </div>
+            <h3 class="font-semibold mt-5">24/7 CUSTOMER SERVICE</h3>
+            <p class="text-sm mt-2 text-neutral-600">
+              Friendly 24/7 customer support
+            </p>
+          </div>
+          <div>
+            <div
+              class="mx-auto w-20 h-20 rounded-full bg-neutral-300 flex items-center justify-center text-3xl"
+            >
+              <div
+                class="border-2 border-[black] rounded-full h-14 w-14 bg-black flex items-center justify-center"
+              >
+                <img src="./assets/Icon-secure.png" alt="" />
+              </div>
+            </div>
+            <h3 class="font-semibold mt-5">MONEY BACK GUARANTEE</h3>
+            <p class="text-sm mt-2 text-neutral-600">
+              We return money within 30 days
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: { brand: "#DB4444" },
+          },
+        },
+      };
+    </script> -->
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIcon = document.getElementById("menuIcon");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-xmark");
+        }
+      });
+
+      function initializeMenu() {
+        const menuButton = document.getElementById("menuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const menuIcon = document.getElementById("menuIcon");
+
+        // Only run if elements exist
+        if (menuButton && mobileMenu && menuIcon) {
+          menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+
+            if (mobileMenu.classList.contains("hidden")) {
+              menuIcon.classList.remove("fa-xmark");
+              menuIcon.classList.add("fa-bars");
+            } else {
+              menuIcon.classList.remove("fa-bars");
+              menuIcon.classList.add("fa-xmark");
+            }
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

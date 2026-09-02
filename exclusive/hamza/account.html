@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>My Account | Exclusive</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .second-div {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white font-['DM_Sans'] text-[#171717]">
+    <div id="header"></div>
+    <main
+      class="mx-auto max-w-[1100px] px-5 pb-20 pt-10 sm:px-8 lg:px-10 lg:pt-16"
+    >
+      <div class="mb-16 text-sm text-[#7d8790]">
+        <a href="#" class="hover:text-[#171717]">Home</a>
+        <span class="mx-3 text-[#b6bdc4]">/</span>
+        <span class="text-[#171717]">My Account</span>
+      </div>
+
+      <div
+        class="mb-12 flex flex-col justify-between gap-3 sm:flex-row sm:items-center"
+      >
+        <h1
+          class="font-['Space_Grotesk'] text-3xl font-medium tracking-tight text-[#082b52] sm:text-4xl"
+        >
+          My Account
+        </h1>
+        <p class="text-sm">
+          Welcome! <span class="text-[#DB4444]">Md. Shakil</span>
+        </p>
+      </div>
+
+      <div
+        class="grid items-start gap-14 lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-24"
+      >
+        <div aria-label="Account navigation" class="text-sm">
+          <div class="mb-7">
+            <h2 class="mb-4 font-semibold text-[#082b52]">Manage My Account</h2>
+            <nav class="space-y-3 pl-8 text-[#7d8790]">
+              <a href="#profile" class="block text-[#DB4444]">My Profile</a>
+              <a href="#address" class="block hover:text-[#DB4444]"
+                >Address Book</a
+              >
+              <a href="#payment" class="block hover:text-[#DB4444]"
+                >My Payment Options</a
+              >
+            </nav>
+          </div>
+          <div class="mb-7">
+            <h2 class="mb-4 font-semibold text-[#082b52]">My Orders</h2>
+            <nav class="space-y-3 pl-8 text-[#7d8790]">
+              <a href="#orders" class="block hover:text-[#DB4444]"
+                >My Returns</a
+              >
+              <a href="#orders" class="block hover:text-[#DB4444]"
+                >My Cancellations</a
+              >
+            </nav>
+          </div>
+          <a href="#logout" class="pl-8 text-sm hover:text-[#DB4444]">Logout</a>
+        </div>
+
+        <section class="rounded border border-[#e4e7e9] p-6 sm:p-10 space-y-18">
+          <h2
+            class="mb-3 font-['Space_Grotesk'] text-xl font-medium text-[#DB4444]"
+          >
+            Edit Your Profile
+          </h2>
+          <form class="space-y-4">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-sm">First Name</span>
+                <input
+                  type="text"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
+                />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm">Last Name</span>
+                <input
+                  type="text"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
+                />
+              </label>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-sm">Email Address</span>
+                <input
+                  type="email"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
+                />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm">Address</span>
+                <input
+                  type="text"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
+                />
+              </label>
+            </div>
+            <div>
+              <h3 class="mb-3 text-sm">Password Changes</h3>
+              <div class="space-y-4">
+                <input
+                  type="password"
+                  placeholder="Current Password"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790]"
+                />
+                <input
+                  type="password"
+                  placeholder="New Password"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790]"
+                />
+                <input
+                  type="password"
+                  placeholder="Confirm New Password"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790]"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col-reverse justify-end gap-4 pt-2 sm:flex-row sm:items-center"
+            >
+              <button
+                type="reset"
+                class="px-7 py-3 text-sm hover:text-[#DB4444]"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="rounded bg-[#DB4444] px-8 py-3 text-sm font-medium text-white transition hover:bg-[#b93636]"
+              >
+                Save Changes
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- abdullah -->
+    <div id="footer"></div>
+    <script>
+      fetch("../Abdullah/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+
+      fetch("../Abdullah/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data.replaceAll(
+            "./assets/",
+            "../Abdullah/assets/",
+          );
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
+</html>

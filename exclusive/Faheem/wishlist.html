@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wishlist &amp; Just For You</title>
+<script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+     * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .second-div {
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    #header select {
+      background-color: #000000;
+      color: #ffffff;
+      border: 0;
+      outline: none;
+    }
+
+    #header select option {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  body { font-family: 'Inter', sans-serif; }
+  .star { color: #f59e0b; }
+</style>
+</head>
+<body class="bg-white text-gray-900">
+    <div id="header"></div>
+<section class="max-w-7xl mx-auto px-6 py-10">
+
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-lg font-semibold">Wishlist (4)</h2>
+    <button class="border border-gray-300 rounded-md px-5 py-2 text-sm font-medium hover:bg-gray-50 transition">
+      Move All To Bag
+    </button>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">-35%</span>
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 7h12M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2m2 0v12a2 2 0 01-2 2H8a2 2 0 01-2-2V7h12z" />
+          </svg>
+        </button>
+        <img src="proimage/photo10.svg" alt="Gucci duffle bag" class="w-4/5 h-52 mx-auto object-contain p-6" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">Gucci duffle bag</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$960</span>
+        <span class="text-gray-400 line-through text-sm">$1160</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 7h12M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2m2 0v12a2 2 0 01-2 2H8a2 2 0 01-2-2V7h12z" />
+          </svg>
+        </button>
+        <img src="proimage/photo9.svg" alt="RGB liquid CPU Cooler" class="w-4/5 h-52 mx-auto object-contain p-6" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">RGB liquid CPU Cooler</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$1960</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 7h12M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2m2 0v12a2 2 0 01-2 2H8a2 2 0 01-2-2V7h12z" />
+          </svg>
+        </button>
+        <img src="proimage/photo12.svg" alt="GP11 Shooter USB Gamepad" class="w-4/5 h-52 mx-auto object-contain p-6" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">GP11 Shooter USB Gamepad</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$550</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 7h12M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2m2 0v12a2 2 0 01-2 2H8a2 2 0 01-2-2V7h12z" />
+          </svg>
+        </button>
+        <img src="proimage/photo11.svg" alt="Quilted Satin Jacket" class="w-4/5 h-52 mx-auto object-contain p-6" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">Quilted Satin Jacket</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$750</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center gap-3">
+      <span class="w-1.5 h-6 bg-red-500 rounded-sm"></span>
+      <h2 class="text-lg font-semibold">Just For You</h2>
+    </div>
+    <button class="border border-gray-300 rounded-md px-5 py-2 text-sm font-medium hover:bg-gray-50 transition">
+      See All
+    </button>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">-35%</span>
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178a1.012 1.012 0 010 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </button>
+        <img src="proimage/photo13.svg" alt="ASUS FHD Gaming Laptop" class="w-4/5 h-52 mx-auto object-contain p-6" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">ASUS FHD Gaming Laptop</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$960</span>
+        <span class="text-gray-400 line-through text-sm">$1160</span>
+      </div>
+      <div class="flex items-center gap-1 mt-1">
+        <span class="star text-xs">★★★★★</span>
+        <span class="text-xs text-gray-400">(65)</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178a1.012 1.012 0 010 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </button>
+        <img src="proimage/photo8.svg" alt="IPS LCD Gaming Monitor" class="w-4/5 h-52 mx-auto object-contain p-6 opacity-90" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">IPS LCD Gaming Monitor</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$1160</span>
+      </div>
+      <div class="flex items-center gap-1 mt-1">
+        <span class="star text-xs">★★★★★</span>
+        <span class="text-xs text-gray-400">(65)</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</span>
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178a1.012 1.012 0 010 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </button>
+        <img src="proimage/photo6.svg" alt="HAVIT HV-G92 Gamepad" class="w-4/5 h-52 mx-auto object-contain p-6" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">HAVIT HV-G92 Gamepad</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$560</span>
+      </div>
+      <div class="flex items-center gap-1 mt-1">
+        <span class="star text-xs">★★★★★</span>
+        <span class="text-xs text-gray-400">(65)</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="relative bg-gray-100 rounded-lg overflow-hidden">
+        <button class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178a1.012 1.012 0 010 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </button>
+        <img src="proimage/photo7.svg" alt="AK-900 Wired Keyboard" class="w-4/5 h-52 mx-auto object-contain p-6 opacity-90" />
+        <button class="absolute bottom-0 left-0 right-0 bg-black text-white text-sm py-2.5 flex items-center justify-center gap-2 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Add To Cart
+        </button>
+      </div>
+      <h3 class="mt-3 text-sm font-medium">AK-900 Wired Keyboard</h3>
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-red-500 font-semibold text-sm">$200</span>
+      </div>
+      <div class="flex items-center gap-1 mt-1">
+        <span class="star text-xs">★★★★★</span>
+        <span class="text-xs text-gray-400">(65)</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<div id="footer"></div>
+  <script>
+    fetch("../Abdullah/header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading header:", error));
+
+    fetch("../Abdullah/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data
+            .replaceAll("./assets/", "../Abdullah/assets/")
+            .replace("sm:border-2", "");
+      })
+      .catch((error) => console.error("Error loading footer:", error));
+
+  </script>
+</body>
+</html>

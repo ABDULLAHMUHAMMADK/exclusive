@@ -1,0 +1,122 @@
+  <header class="w-full h-auto md:h-[100px] flex flex-col gap-4">
+    <div
+      class="w-full min-h-[40px] md:h-[30px] text-[white] bg-[#000000] flex items-center"
+    >
+      <div class="hidden md:block w-[30%] h-[30px]"></div>
+
+      <div
+        class="w-full md:w-[40%] min-h-[40px] md:h-[30px] text-[9px] md:text-[10px] flex items-center justify-center gap-2 md:gap-4 text-center px-2"
+      >
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+
+        <button class="whitespace-nowrap">
+          <a href="#" class="underline"> Shop Now </a>
+        </button>
+      </div>
+
+      <div
+        class="hidden md:flex w-[30%] h-[30px] text-[12px] items-center justify-center"
+      >
+        <select
+          name="language"
+          id="language"
+          class="bg-[#000000] text-[white] outline-none"
+        >
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+    </div>
+
+    <div
+      class="second-div w-full h-[60px] flex items-center justify-between px-4 md:px-0"
+    >
+      <div class="w-auto md:w-[30%] h-[60px] flex items-center justify-center">
+        <a href="./index.html" class="text-[25px] font-bold">Exclusive</a>
+      </div>
+
+      <div
+        class="hidden md:flex w-[35%] h-[60px] items-center justify-center gap-4"
+      >
+        <ul class="flex gap-[30px] text-[16px]">
+          <li>
+            <a href="./index.html" class="hover:underline"> Home </a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="hover:underline"> Contact </a>
+          </li>
+
+          <li>
+            <a href="../farman/about.html" class="hover:underline"> About </a>
+          </li>
+
+          <li>
+            <a href="../farman/signup.html" class="hover:underline"> Sign Up </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="h-[60px] flex items-center justify-end md:justify-center gap-[15px] md:gap-[20px] w-auto md:w-[35%]"
+      >
+        <div class="hidden sm:flex justify-center items-center h-[40px]">
+          <input
+            type="search"
+            class="text-[10px] bg-[#F5F5F5] h-[40px] w-[150px] md:w-auto px-3 outline-none"
+            placeholder="What are you looking for?"
+          />
+
+          <i
+            class="fa-solid fa-magnifying-glass text-[18px] bg-[#F5F5F5] h-[40px] flex items-center pr-3"
+          ></i>
+        </div>
+
+        <i
+          class="fa-solid fa-heart text-[18px] md:text-[20px] cursor-pointer"
+        ></i>
+
+        <i
+          class="fa-solid fa-cart-shopping text-[18px] md:text-[20px] cursor-pointer"
+        ></i>
+
+        <button
+          id="menuButton"
+          type="button"
+          class="md:hidden text-[22px] ml-1 cursor-pointer"
+          aria-label="Open menu"
+        >
+          <i id="menuIcon" onclick="initializeMenu()" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="mobileMenu"
+      class="hidden md:hidden w-full bg-white border-t border-gray-200 shadow-md"
+    >
+      <ul class="w-full flex flex-col text-[16px]">
+        <li>
+          <a href="#" class="block w-full px-6 py-4 hover:bg-gray-100"> Home </a>
+        </li>
+
+        <li>
+          <a href="#" class="block w-full px-6 py-4 hover:bg-gray-100">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block w-full px-6 py-4 hover:bg-gray-100"> About </a>
+        </li>
+
+        <li>
+          <a href="#" class="block w-full px-6 py-4 hover:bg-gray-100">
+            Sign Up
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
